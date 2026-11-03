@@ -1,0 +1,59 @@
+title: "[Idea] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 💡 Share an idea
+        Thanks for helping shape ShopsBuilder! The best ideas start with the **problem**, not the solution.
+        Please search existing ideas first, and 👍 upvote instead of posting a duplicate.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Product area
+      options:
+        - Storefront & themes
+        - Catalog & products
+        - Checkout & payments
+        - Orders & fulfilment
+        - Marketplace
+        - AI merchant tools
+        - Integrations & API
+        - Dashboard & settings
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the situation and why it's painful today.
+      placeholder: When I ..., I have to ..., which means ...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to see?
+      description: Describe how you imagine it working. Mockups and screenshots are welcome.
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: How important is this for your business?
+      options:
+        - Nice to have
+        - Important — would save me real time or money
+        - Critical — blocking me today
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: How do you handle this today?
+      description: Any workaround, other tool or manual process you use instead.
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else?
+      description: Links, examples from other products, store size or volume, etc.
