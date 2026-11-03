@@ -1,0 +1,33 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🙌 Show and tell
+        Built something with ShopsBuilder? We'd love to see it — and so would other merchants!
+  - type: input
+    id: link
+    attributes:
+      label: Link to your store or project
+      placeholder: https://
+  - type: textarea
+    id: what
+    attributes:
+      label: What did you build?
+      description: Tell us about your store, theme, integration or workflow.
+    validations:
+      required: true
+  - type: textarea
+    id: how
+    attributes:
+      label: How did you do it?
+      description: Features you used, tips, lessons learned — anything others could learn from.
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or video
+      description: Drag and drop images or videos here.
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What could have been easier?
+      description: Optional — anything that slowed you down along the way.
