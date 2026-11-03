@@ -1,0 +1,99 @@
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🐞 Report a bug
+        Thanks for taking the time to report this! A clear report helps us fix it faster.
+
+        > ⚠️ This space is **public**. Never post passwords, API keys, card details or customer personal data.
+        > For security vulnerabilities, please contact us privately through in-app support instead.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Product area
+      options:
+        - Storefront & themes
+        - Catalog & products
+        - Checkout & payments
+        - Orders & fulfilment
+        - Marketplace
+        - AI merchant tools
+        - Integrations & API
+        - Dashboard & settings
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A short, clear description of the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Click on ...
+        3. See error ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      options:
+        - Every time
+        - Sometimes
+        - Happened once
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Impact
+      options:
+        - Minor — cosmetic or easy to work around
+        - Major — a feature doesn't work
+        - Critical — I can't sell or take payments
+    validations:
+      required: true
+  - type: input
+    id: store
+    attributes:
+      label: Store URL or ID
+      description: Optional, helps us find the problem faster.
+  - type: input
+    id: environment
+    attributes:
+      label: Browser / device
+      placeholder: e.g. Chrome 131 on macOS, Safari on iPhone 15
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or recordings
+      description: Drag and drop images or videos here.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error messages or logs
+      description: Paste any error text. It will be formatted as code automatically.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing bug reports and this hasn't been reported yet
+          required: true
+        - label: I removed any secrets or personal data from this report
+          required: true
